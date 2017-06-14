@@ -6,12 +6,7 @@ import (
 )
 
 func main() {
-    http.HandleFunc("/",version)
-    //api(version)
-    log.Fatal(http.ListenAndServe(":8080", nil))
+	http.HandleFunc("/version", version)
+	//api(version)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
-
-
-
-
-
